@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.log
+.expo/
+dist-native/
+.env
+.env.*
+!.env.example

@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "GreenLife",
+    "slug": "greenlife",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.greenlife.coursework"
+    },
+    "plugins": [
+      "expo-font",
+      "expo-status-bar",
+      "expo-sqlite"
+    ]
+  }
+}
