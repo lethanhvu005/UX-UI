@@ -1,5 +1,5 @@
 import { openDatabaseAsync } from 'expo-sqlite';
-import { initializeDatabase, loadDatabaseState, saveCommitment } from './repository';
+import { initializeDatabase, loadDatabaseState, readState, saveCommitment, writeState } from './repository';
 
 let connection;
 function getDatabase() {
@@ -14,3 +14,5 @@ function getDatabase() {
 }
 export async function loadAppData() { return loadDatabaseState(await getDatabase()); }
 export async function commitGreenLiving() { await saveCommitment(await getDatabase()); }
+export async function loadAppState() { return readState(await getDatabase()); }
+export async function saveAppState(state) { await writeState(await getDatabase(), state); }
